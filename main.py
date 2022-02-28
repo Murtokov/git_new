@@ -32,7 +32,7 @@ class Example(QMainWindow, Ui_MainWindow):
     def draw_square(self, qp):
         if self.isdraw:
             for i in range(15):
-                qp.setBrush(QColor(255, 255, 0))
+                qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
 
                 side = randint(2, 5)
                 razm = randint(5, 60)
